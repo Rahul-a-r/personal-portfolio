@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Welcome Section */
+#welcome-section {
+  background: #007bff;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Projects Section */
+#projects {
+  padding: 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-tile {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(30% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-tile a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-tile:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+#contact {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 10px;
+}
+
+#profile-link {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+}
